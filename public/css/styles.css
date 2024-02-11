@@ -1,0 +1,12 @@
+body {
+  width: 700px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.navbar a {
+  font-size: larger;
+  text-decoration: none;
+  color: grey;
+  margin: 1rem;
+}
