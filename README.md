@@ -24,7 +24,7 @@ Install dependencies
 Run the cient side
 
 ```bash
-  node src/app.js
+  nodemon src/app.js
 ```
 
 
