@@ -1,9 +1,10 @@
 const axios = require("axios");
 
+//get the co-ordinates of the given location
 const getCoords = async (city, cb) => {
   try {
     const { data } = await axios.get(
-      `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=96d97b5be73a6c3ef5bf6d39e0f39b3c`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${process.env.OPEN_WEATHER_API_KEY}`
     );
     if (data.length == 0) {
       cb(

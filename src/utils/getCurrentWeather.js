@@ -1,9 +1,10 @@
 const axios = require("axios");
 
+//gives the weather to the "co-ordinates" input
 const getWeather = async ({ lat, lon }, cb) => {
   try {
     const { data } = await axios.get(
-      `https://api.weatherbit.io/v2.0/current?key=29f59ddc39b9462a814f388a0b2186f1&lat=${lat}&lon=${lon}`
+      `https://api.weatherbit.io/v2.0/current?key=${process.env.WEATHER_BIT_API_KEY}&lat=${lat}&lon=${lon}`
     );
     cb(undefined, data.data);
   } catch (error) {

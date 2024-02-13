@@ -1,4 +1,5 @@
 const express = require("express");
+require("dotenv").config();
 const path = require("path");
 const hbs = require("hbs");
 const getCoords = require("./utils/getCoords.js");
